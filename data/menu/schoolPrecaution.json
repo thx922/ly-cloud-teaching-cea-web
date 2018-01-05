@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "parentName": "学业预警管理",
+        "isShow": true,
+        "target": "",
+        "targetUrl": "",
+        "icon":"fa fa-th-large",
+        "child": [{
+            "name": "预警配置管理",
+            "isShow": true,
+            "target": "warningConfigManage",
+            "targetUrl": "common.warningConfigManage"
+        },{
+            "name": "预警监控人维护",
+            "isShow": true,
+            "target": "warningPersonMaintenance",
+            "targetUrl": "common.warningPersonMaintenance"
+        },{
+            "name": "学生家长信息维护",
+            "isShow": true,
+            "target": "warningPatriarchManage",
+            "targetUrl": "common.warningPatriarchManage"
+        },{
+            "name": "预警档案管理",
+            "isShow": true,
+            "target": "warningArchiveManage",
+            "targetUrl": "common.warningArchiveManage"
+        },{
+            "name": "预警执行管理",
+            "isShow": true,
+            "target": "warningExecutionManage",
+            "targetUrl": "common.warningExecutionManage"
+        }]
+    },{
+        "id": 2,
+        "parentName": "预警效果评估",
+        "isShow": true,
+        "target": "",
+        "targetUrl": "",
+        "icon":"glyphicon glyphicon-stats",
+        "child": [{
+            "name": "预警等级人数统计",
+            "isShow": true,
+            "target": "warningPcountManage",
+            "targetUrl": "common.warningPcountManage"
+        },{
+            "name": "学期预警分析图",
+            "isShow": true,
+            "target": "warningAnalyzeChart",
+            "targetUrl": "common.warningAnalyzeChart"
+        },{
+            "name": "个人预警情况统计",
+            "isShow": true,
+            "target": "personalWarningCount",
+            "targetUrl": "common.personalWarningCount"
+        }]
+    }
+]

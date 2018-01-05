@@ -1,0 +1,83 @@
+<div class="modal-header">
+	<h3 class="modal-title">新 增</h3>
+</div>
+<div class="modal-body">
+	<form name="pyfabzkz_form" class="form-horizontal" novalidate>
+		<div class="form-group">
+			<label class="col-xs-3 control-label required">学生类别：</label>
+			<div class="col-xs-8">
+				<select ng-model="pyfabzkz.xslb" ng-required="true" id="xslb" name="xslb" ui-jq="chosen"ui-options="{search_contains: true}" class="form-control">
+					<option value="">== 请选择 ==</option>
+					<option value="普通本科">普通本科</option>
+					<option value="普通专科">普通专科</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-xs-3 control-label required">年级：</label>
+			<div class="col-xs-8">
+				<input
+						type="text"
+						ng-model="pyfabzkz.nj"
+						integer
+						id="nj"
+						name="nj"
+						class="form-control"
+						uib-tooltip="请填写整数，如：'2017'"
+						tooltip-placement="bottom"
+						tooltip-trigger="'focus'"
+						tooltip-enable="pyfabzkz_form.nj.$error.integer"
+						tooltip-is-open="pyfabzkz_form.nj.$error.integer"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-xs-3 control-label required">开始日期：</label>
+			<div class="col-xs-8">
+				<div class="input-group">
+					<input ng-model="pyfabzkz.ksrq" id="ksrq" name="ksrq" type="text" class="form-control"
+						   uib-datepicker-popup="yyyy-MM-dd"
+						   is-open="ksrqOptions.opened"
+						   datepicker-options="ksrqOptions.dateOptions"
+						   ng-required="true"
+						   current-text="今天"
+						   clear-text="清除"
+						   close-text="关闭"
+						   ng-click="ksrqOptions.open()" />
+				  <span class="input-group-btn">
+					<button type="button" class="btn btn-default" ng-click="ksrqOptions.open()"><i class="glyphicon glyphicon-calendar"></i></button>
+				  </span>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-xs-3 control-label required">结束日期：</label>
+			<div class="col-xs-8">
+				<div class="input-group">
+					<input ng-model="pyfabzkz.jsrq" id="jsrq" name="jsrq" type="text" class="form-control"
+						   uib-tooltip="结束日期不能小于开始日期"
+						   tooltip-placement="bottom"
+						   tooltip-trigger="'focus'"
+						   tooltip-enable="jsrqTooltipEnableAndOpen"
+						   tooltip-is-open="jsrqTooltipEnableAndOpen"
+						   uib-datepicker-popup="yyyy-MM-dd"
+						   is-open="jsrqOptions.opened"
+						   datepicker-options="jsrqOptions.dateOptions"
+						   ng-required="true"
+						   date-gt
+						   equals="pyfabzkz.ksrq"
+						   current-text="今天"
+						   clear-text="清除"
+						   close-text="关闭"
+						   ng-click="jsrqOptions.open()"/>
+				  <span class="input-group-btn">
+					<button type="button" class="btn btn-default" ng-click="jsrqOptions.open()"><i class="glyphicon glyphicon-calendar"></i></button>
+				  </span>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" ng-disabled="pyfabzkz_form.$invalid" ng-click="ok()">确 定</button>
+	<button class="btn btn-default" type="button" ng-click="close()">取 消</button>
+</div>

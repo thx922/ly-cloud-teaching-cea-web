@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "parentName": "培养方案编制控制",
+        "isShow": true,
+        "target": "planPreparedControl",
+        "targetUrl": "common.planPreparedControl",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 2,
+        "parentName": "培养方案编制审批流程设置",
+        "isShow": true,
+        "target": "planPreparedApprovalProcessSetting",
+        "targetUrl": "common.planPreparedApprovalProcessSetting",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 3,
+        "parentName": "培养方案编制审批流程监控",
+        "isShow": true,
+        "target": "planPreparedApprovalProcessMonitor",
+        "targetUrl": "common.planPreparedApprovalProcessMonitor",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 4,
+        "parentName": "培养方案基本信息管理",
+        "isShow": true,
+        "target": "planPreparedBasicInfoManage",
+        "targetUrl": "common.planPreparedBasicInfoManage",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 5,
+        "parentName": "专业学分计划管理",
+        "isShow": true,
+        "target": "professionalCreditsPlanManage",
+        "targetUrl": "common.professionalCreditsPlanManage",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 6,
+        "parentName": "专业课程计划申请",
+        "isShow": true,
+        "target": "professionalCoursesPlanApple",
+        "targetUrl": "common.professionalCoursesPlanApple",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 7,
+        "parentName": "专业课程计划审核",
+        "isShow": true,
+        "target": "professionalCoursesPlanReview",
+        "targetUrl": "common.professionalCoursesPlanReview",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 8,
+        "parentName": "专业课程计划维护",
+        "isShow": true,
+        "target": "professionalCoursesPlanMaintain",
+        "targetUrl": "common.professionalCoursesPlanMaintain",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 9,
+        "parentName": "班级学分计划管理",
+        "isShow": true,
+        "target": "classCreditsPlanManage",
+        "targetUrl": "common.classCreditsPlanManage",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 10,
+        "parentName": "班级课程计划管理",
+        "isShow": true,
+        "target": "classCoursesPlanManage",
+        "targetUrl": "common.classCoursesPlanManage",
+        "icon": "fa fa-cog"
+    },
+    {
+        "id": 11,
+        "parentName": "学分统计",
+        "isShow": true,
+        "target": "creditStatistics",
+        "targetUrl": "common.creditStatistics",
+        "icon": "fa fa-cog"
+    }
+]
